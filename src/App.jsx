@@ -2,6 +2,7 @@ import Features from "./components/Features"
 import Header from "./components/Header"
 import Home from "./components/Home"
 import Pricing from "./components/Pricing"
+import Testimonial from "./components/Testimonial"
 
 
 
@@ -14,6 +15,7 @@ function App() {
         <Home />
         <Features/>
         <Pricing/>
+        <Testimonial/>
       </div>
     </>
   )

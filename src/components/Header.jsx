@@ -14,7 +14,7 @@ const Header = () => {
           </div>
           </a>
           <div className=' flex  justify-between font-light gap-x-9 '>
-            <div>Pricing</div>
+            <a href='#pricing'>Pricing</a>
             <a href='#features'>Features</a>
             <div>Blog</div>
           </div>
