@@ -1,6 +1,7 @@
 import Features from "./components/Features"
 import Header from "./components/Header"
 import Home from "./components/Home"
+import Pricing from "./components/Pricing"
 
 
 
@@ -12,6 +13,7 @@ function App() {
         <Header/>
         <Home />
         <Features/>
+        <Pricing/>
       </div>
     </>
   )

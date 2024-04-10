@@ -24,8 +24,8 @@ const Home = () => {
                     </div>
                 </div >
                 <div className='flex justify-center items-center -mt-12 space-x-8 '>
-                    <button className="bg-black font-semibold  text-base text-white rounded-xl p-5 ">Start Your GA4 Audit Now</button>
-                    <button className="bg-white font-semibold text-base text-black rounded-xl p-5 ">Download Sample Audit</button>
+                    <button className="bg-black font-semibold  text-base text-white rounded-xl p-5 hover:bg-yellow-700 ">Start Your GA4 Audit Now</button>
+                    <button className="bg-white font-semibold text-base text-black rounded-xl p-5 hover:bg-black hover:text-white">Download Sample Audit</button>
                 </div>
                 <div className='flex flex-col mt-12 gap-14 pb-12  h-full'>
                     <ImageSlider />

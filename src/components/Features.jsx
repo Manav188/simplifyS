@@ -129,27 +129,24 @@ const Features = () => {
                     Our Google Analytics audit tool is suitable for businesses of all sizes, including those in need of a single audit, agencies requiring multiple audits, and enterprises with custom needs.
                     </div>
                 </div >
-            <div className='flex justify-evenly gap-4'>
-                <div className='w-1/2 '>
-                    <img src={sw} className='rounded-tl-[150px] rounded-br-[150px] rounded-bl-[150px]'/>
+            <div className='flex pb-12 justify-center items-center gap-12'>
+                <div className=''>
+                    <img src={sw} className=' h-[465px] rounded-tl-[150px] rounded-br-[150px] rounded-bl-[150px]'/>
                 </div>
-                <div>
+                <div >
                   
-                    <div className='flex w-full  py-9 border-y'>
-                    <a className='justify-start'>For brands</a>
+                    <div className='flex  py-9 border-y '>
+                    <a className=''>For brands</a>
                     <FontAwesomeIcon className='ml-44 mt-1' icon={faArrowRight}/>
                     </div>      
                     <div className='flex w-full  py-9 border-y'>
-                    <a className='justify-start'>For brands</a>
+                    <a className=''>For agencies</a>
                     <FontAwesomeIcon className='ml-44 mt-1' icon={faArrowRight}/>
                     </div>
                     <div className='flex w-full  py-9 border-y'>
-                    <a className='justify-start'>For brands</a>
+                    <a className=''>For enterprises</a>
                     <FontAwesomeIcon className='ml-44 mt-1' icon={faArrowRight}/>
-                    </div>  
-                               
-
-                   
+                    </div>                     
                 </div>
 
             </div>
