@@ -1,8 +1,67 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
+import PricingCard from "../cards/PricingCard";
 
 const Pricing = () => {
+
+  const oneTimeAudit = {
+    title: "One-time Audit",
+    price: "$59",
+    description: "Get a comprehensive GA4 audit report with our one-time purchase option",
+    features: [
+      "1 comprehensive audit",
+      "PDF, PowerPoint formats",
+      "Multiple report themes",
+      "Premium Support"
+    ],
+    buttonLabel: "Get Started",
+    buttonColor: "black",
+    Color: 'white',
+    BgColor:"white",
+    rates:' /audit'
+  };
+
+  const agencyProYearly = {
+    title: "Agency Pro Yearly",
+    price: "$499",
+    description: "Perfect for agencies that need multiple white-label audits at a discounted rate",
+    features: [
+      "180 comprehensive audit per year",
+      "PDF, PowerPoint, Google Slide formats",
+      "Multiple report themes",
+      "Premium Support",
+      "Branding free reports",
+      "Whitelabel, use your own theme"
+    ],
+    buttonLabel: "Get Started",
+    buttonColor: "white",
+    color:"black",
+    BgColor:"black",
+    TextColor:'white',
+    rates:' /year',
+    IconColor:"white"
+  };
+
+  const enterprise = {
+    title: "Enterprise",
+    price: "Contact Us",
+    description: "Do you need more than 180 audits per year? Contact us for a custom plan",
+    features: [
+      "Custom number of audits per your needs",
+      "PDF, PowerPoint,Google Slide formats",
+      "Multiple report themes",
+      "Premium Support",
+      "Branding free reports",
+      "Whitelabel, use your own theme",
+      "Feature Requests"
+    ],
+    buttonLabel: "Get Started",
+    buttonColor: "black",
+    Color:"white",
+    BgColor:"white"
+  };
+
   return (
     <div id='pricing'>
     <div className="relative bg-blue-50 min-h-screen flex flex-col justify-center items-center">
@@ -24,148 +83,15 @@ const Pricing = () => {
           Choose the plan that's right for you
         </div>
       </div>
-      <div className="z-10 mb-12 flex justify-evenly gap-11 -mt-24">
-        <div className=" p-3 flex flex-col  justify-between items-center rounded-xl bg-white">
-          <div className=" py-3 font-medium  text-xl">One-time Audit</div>
-          <div className="font-bold text-xl">
-            $59
-            <span className=" text-base font-thin text-gray-600">/audit</span>
-          </div>
-          <div className=" py-2 mt-2 border-t-2 text-gray-600 text-[14px] text-base">
-            Get a comprehensive GA4 audit report with our one-time purchase
-            option
-          </div>
-          <div className="flex items-center pb-2">
-            <FontAwesomeIcon icon={faCircleCheck} />
-            <div className="pl-2  font-semibold text-lg">
-              1 comprehensive audit
-            </div>
-          </div>
-          <div className="flex items-center pb-2">
-            <FontAwesomeIcon icon={faCircleCheck} />
-            <div className="pl-2 font-semibold text-lg">
-              PDF, PowerPoint formats
-            </div>
-          </div>
-          <div className="flex items-center pb-2">
-            <FontAwesomeIcon icon={faCircleCheck} />
-            <div className="pl-2 font-semibold text-lg">
-              Multiple report themes
-            </div>
-          </div>
-          <div className="flex items-center pb-2">
-            <FontAwesomeIcon icon={faCircleCheck} />
-            <div className="pl-2 font-semibold text-lg">Premium Support</div>
-          </div>
-          <div>
-            <button className="bg-black font-semibold  text-base text-white rounded-xl p-5 w-full hover:bg-yellow-700 ">
-              Get Started
-            </button>
-          </div>
-        </div>
-        <div className=" p-3 items-center flex flex-col justify-between rounded-xl bg-black text-white">
-          <div className=" py-3 font-medium text-xl">Agency Pro Yearly</div>
-          <div className="font-bold text-xl">
-            $499
-            <span className=" text-base font-thin text-gray-300">/year</span>
-          </div>
-          <div className=" py-2 mt-2 border-t-2 text-gray-300 text-[14px] text-base">
-            Perfect for agencies that need multiple white-label audits at a
-            discounted rate
-          </div>
-          <div className="flex items-center pb-2">
-            <FontAwesomeIcon icon={faCircleCheck} />
-            <div className="pl-2 font-semibold text-lg">
-              180 comprehensive audit per year
-            </div>
-          </div>
-          <div className="flex items-center pb-2">
-            <FontAwesomeIcon icon={faCircleCheck} />
-            <div className="pl-2 font-semibold text-lg">
-              PDF, PowerPoint, Google Slide formats
-            </div>
-          </div>
-          <div className="flex items-center pb-2">
-            <FontAwesomeIcon icon={faCircleCheck} />
-            <div className="pl-2 font-semibold text-lg">
-              Multiple report themes
-            </div>
-          </div>
-          <div className="flex items-center pb-2">
-            <FontAwesomeIcon icon={faCircleCheck} />
-            <div className="pl-2 font-semibold text-lg">Premium Support</div>
-          </div>
-          <div className="flex items-center pb-2">
-            <FontAwesomeIcon icon={faCircleCheck} />
-            <div className="pl-2 font-semibold text-lg">
-              Branding ree reports
-            </div>
-          </div>
-          <div className="flex items-center pb-2">
-            <FontAwesomeIcon icon={faCircleCheck} />
-            <div className="pl-2 font-semibold text-lg">
-              Whitelabel,use your own theme
-            </div>
-          </div>
-          <div>
-            <button className="bg-white  text-black font-semibold  text-base rounded-xl p-5 w-full hover:bg-yellow-700 ">
-              Get Started
-            </button>
-          </div>
-        </div>
-        <div className=" p-3 items-center flex flex-col justify-between rounded-xl bg-white">
-          <div className=" py-3 font-medium text-xl">Enterprise</div>
-          <div className="font-bold text-xl">Contact Us</div>
-          <div className=" py-2 mt-2 border-t-2 text-gray-600 text-[14px] text-base">
-            Do you need more than 180 audits per year? Contact us for a custom
-            plan
-          </div>
-          <div className="flex items-center pb-2">
-            <FontAwesomeIcon icon={faCircleCheck} />
-            <div className="pl-2 font-semibold text-lg">
-              Custom number of audits per your needs
-            </div>
-          </div>
-          <div className="flex items-center pb-2">
-            <FontAwesomeIcon icon={faCircleCheck} />
-            <div className="pl-2 font-semibold text-lg">
-              PDF, PowerPoint,Google Slide formats
-            </div>
-          </div>
-          <div className="flex items-center pb-2">
-            <FontAwesomeIcon icon={faCircleCheck} />
-            <div className="pl-2 font-semibold text-lg">
-              Multiple report themes
-            </div>
-          </div>
-          <div className="flex items-center pb-2">
-            <FontAwesomeIcon icon={faCircleCheck} />
-            <div className="pl-2 font-semibold text-lg">Premium Support</div>
-          </div>
-          <div className="flex items-center pb-2">
-            <FontAwesomeIcon icon={faCircleCheck} />
-            <div className="pl-2 font-semibold text-lg">
-              Branding free reports
-            </div>
-          </div>
-          <div className="flex items-center pb-2">
-            <FontAwesomeIcon icon={faCircleCheck} />
-            <div className="pl-2 font-semibold text-lg">
-              Whitelabel, use your own theme
-            </div>
-          </div>
-          <div className="flex items-center pb-2">
-            <FontAwesomeIcon icon={faCircleCheck} />
-            <div className="pl-2 font-semibold text-lg">Feature Requests</div>
-          </div>
-          <div>
-            <button className="bg-black font-semibold  text-base text-white rounded-xl p-5 w-full mt-11 hover:bg-yellow-700 ">
-              Get Started
-            </button>
-          </div>
-        </div>
-      </div>
+
+      <div className="z-10 mb-11 flex  justify-center lg:flex-nowrap min-[314px]:flex-wrap  gap-8 -mt-24 md:flex-wrap">
+      <PricingCard {...oneTimeAudit} />
+      <PricingCard {...agencyProYearly} />
+      <PricingCard {...enterprise} />
     </div>
+
+    </div>
+
     </div>
   );
 };
